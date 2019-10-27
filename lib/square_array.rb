@@ -1,7 +1,9 @@
 def square_array(array)
-  count = 0
-  whiile count < numbers.length do
-    numbers.index ** 2
+  enumerator = array.each
+  a = []
+  loop do
+    n = enumerator.next
+    a << n*n
   end
-  square_array(numbers)
+  a
 end
